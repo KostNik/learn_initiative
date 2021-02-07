@@ -1,1 +1,1 @@
-[![CircleCI](https://circleci.com/gh/KostNik/learn_initiative.svg?style=svg)](https://github.com/KostNik/learn_initiative)
+[![L_I](https://circleci.com/gh/KostNik/learn_initiative.svg?style=svg)](https://github.com/KostNik/learn_initiative)
