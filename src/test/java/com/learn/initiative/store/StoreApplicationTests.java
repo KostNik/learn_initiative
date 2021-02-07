@@ -6,8 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
-@SpringBootTest
+@SpringBootTest(webEnvironment = RANDOM_PORT)
 class StoreApplicationTests {
 
     @Autowired
@@ -15,7 +16,7 @@ class StoreApplicationTests {
 
     @Test
     void shouldReturnHealthCheckInfo() {
-        var actualPong  = restTemplate.getForObject("v1/ping", String.class);
+        var actualPong = restTemplate.getForObject("/v1/ping", String.class);
         assertThat(actualPong).isNotBlank();
     }
 
