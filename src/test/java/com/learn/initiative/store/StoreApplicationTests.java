@@ -17,7 +17,7 @@ class StoreApplicationTests {
     @Test
     void shouldReturnHealthCheckInfo() {
         var actualPong = restTemplate.getForObject("/v1/ping", String.class);
-        assertThat(actualPong).isNotBlank();
+        assertThat(actualPong).contains("PONG");
     }
 
 }
