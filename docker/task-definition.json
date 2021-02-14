@@ -1,0 +1,37 @@
+{
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "inferenceAccelerators": [],
+  "containerDefinitions": [
+    {
+      "name": "ecs-store-li-container",
+      "image": "ecs-store-li-repo:LATEST",
+      "resourceRequirements": null,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": "8080",
+          "hostPort": "8080",
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "awslogs-store",
+          "awslogs-region": "eu-west-3",
+          "awslogs-stream-prefix": "awslogs-example"
+        }
+      }
+    }
+  ],
+  "volumes": [],
+  "networkMode": "awsvpc",
+  "memory": "512",
+  "cpu": "256",
+  "executionRoleArn": "arn:aws:iam::171682868539:role/ecs-store-li-exec-role",
+  "family": "ecs-store-li-task-definition",
+  "taskRoleArn": "",
+  "placementConstraints": []
+}
