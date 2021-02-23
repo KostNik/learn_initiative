@@ -113,11 +113,9 @@ jobs:
       - name: Fill in the new image ID in the Amazon ECS task definition
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
-        env:
-          ECS_CONTAINER: ecs-store-li-container
         with:
           task-definition: task-definition.json
-          container-name: ${{ ECS_CONTAINER }}
+          container-name: ecs-store-li-container
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
