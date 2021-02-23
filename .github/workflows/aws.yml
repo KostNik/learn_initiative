@@ -98,6 +98,7 @@ jobs:
           ECS_CONTAINER: ecs-store-li-container
           ECS_SERVICE: ecs-store-li-service
           ECS_CLUSTER: ecs-store-li-cluster
+          ECS_TASK_DEFINITION: ecs-store-li-task-definition
         run: |
           # Build a docker container and
           # push it to ECR so that it can be deployed to ECS.
@@ -117,7 +118,7 @@ jobs:
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          task-definition: $ECS_TASK_DEFINITION
           service: $ECS_SERVICE
           cluster: $ECS_CLUSTER
           wait-for-service-stability: true
