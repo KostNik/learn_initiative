@@ -117,7 +117,7 @@ jobs:
           ECS_CONTAINER: ecs-store-li-container
         with:
           task-definition: task-definition.json
-          container-name: $ECS_CONTAINER
+          container-name: ${{ ECS_CONTAINER }}
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
