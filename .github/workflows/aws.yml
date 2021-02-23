@@ -108,3 +108,33 @@ jobs:
           docker image push --all-tags $ECR_REGISTRY/$ECR_REPOSITORY
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
 
+      - name: Fill in the new image ID in the Amazon ECS task definition
+        id: task-def
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ecs-store-li-repo
+          IMAGE_TAG: ${{ github.sha }}
+          ECS_CONTAINER: ecs-store-li-container
+          ECS_SERVICE: ecs-store-li-service
+          ECS_CLUSTER: ecs-store-li-cluster
+          ECS_TASK_DEFINITION: ecs-store-li-task-definition
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          container-name: $ECS_CONTAINER
+          image: ${{ steps.build-image.outputs.image }}
+
+      - name: Deploy Amazon ECS task definition
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ecs-store-li-repo
+          IMAGE_TAG: ${{ github.sha }}
+          ECS_CONTAINER: ecs-store-li-container
+          ECS_SERVICE: ecs-store-li-service
+          ECS_CLUSTER: ecs-store-li-cluster
+          ECS_TASK_DEFINITION: ecs-store-li-task-definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: $ECS_TASK_DEFINITION
+          service: $ECS_SERVICE
+          cluster: $ECS_CLUSTER
+          wait-for-service-stability: true
