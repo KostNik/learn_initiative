@@ -12,5 +12,6 @@ RUN echo $(pwd)
 COPY store_app-0.0.1.jar docker-entrypoint.sh $SERVICES_DIR
 
 RUN chmod +x ./docker-entrypoint.sh
+EXPOSE 8080
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
