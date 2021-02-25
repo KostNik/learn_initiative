@@ -14,7 +14,7 @@ public class HealthCheck {
     @GetMapping("/ping")
     @ApiOperation("Health check the Application")
     public String ping() {
-        return "PONG: [->" + LocalDateTime.now() + "<-]";
+        return "PONG: [>" + LocalDateTime.now() + "<]";
     }
 
 }
