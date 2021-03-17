@@ -12,13 +12,23 @@ import java.time.LocalDateTime;
 @RequestMapping("v1")
 public class HealthCheck {
 
-    @Value("${rdb_wszystko}")
+    @Value("${rdb.ws}")
     private Object ws;
+    @Value("${rdb.username}")
+    private String username;
+    @Value("${rdb.password}")
+    private String password;
 
     @GetMapping("/ping")
     @ApiOperation("Health check the Application")
     public String ping() {
-        return "PONG: [>" + LocalDateTime.now() + "<]" + ws.getClass() + "  " + ws.toString();
+        if (ws == null) {
+            ws = "null";
+        }
+        return "PONG: [>" + LocalDateTime.now() + "<]"
+                + ws.getClass() + "  " + ws.toString() +
+                "username : " + username +
+                "password:" + password;
     }
 
 }
