@@ -5,7 +5,3 @@ spring:
 #  datasource:
 #    username: ${rdb_username}
 #    password: ${rdb_password}
-rdb:
-  username: "username"
-  password: "password"
-  ws: "ws"
