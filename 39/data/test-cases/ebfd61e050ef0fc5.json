@@ -1,0 +1,31 @@
+{
+  "uid" : "ebfd61e050ef0fc5",
+  "name" : "shouldReturnHealthCheckInfo()",
+  "historyId" : "873d4d74927be90e7fe7d5383abaefba",
+  "time" : {
+    "start" : 1616273928284,
+    "stop" : 1616273929517,
+    "duration" : 1233
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ebfd61e050ef0fc5.json",
+  "parameterValues" : [ ]
+}

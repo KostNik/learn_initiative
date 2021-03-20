@@ -1,0 +1,21 @@
+[ {
+  "uid" : "5239cf99e90e04f4",
+  "name" : "shouldNotPass()",
+  "time" : {
+    "start" : 1616273929599,
+    "stop" : 1616273929614,
+    "duration" : 15
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebfd61e050ef0fc5",
+  "name" : "shouldReturnHealthCheckInfo()",
+  "time" : {
+    "start" : 1616273928284,
+    "stop" : 1616273929517,
+    "duration" : 1233
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
