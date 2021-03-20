@@ -1,0 +1,22 @@
+{
+  "873d4d74927be90e7fe7d5383abaefba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3265045ab152a8b3",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative/37//#testresult/3265045ab152a8b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616271176195,
+        "stop" : 1616271177306,
+        "duration" : 1111
+      }
+    } ]
+  }
+}
