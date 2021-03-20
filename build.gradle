@@ -8,24 +8,10 @@ plugins {
     id 'org.springframework.boot' version '2.4.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'org.flywaydb.flyway' version '7.7.0'
 }
 
 apply plugin: 'io.qameta.allure'
-
-allure {
-    version = '2.4.1'
-    aspectjweaver = true
-    autoconfigure = true
-
-    reportDir = file('build/allure-results')
-
-    useJUnit5 {
-        version = '2.0-BETA10'
-    }
-
-    downloadLink = 'https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.1.1/allure-2.1.1.zip'
-}
-
 
 group = 'com.learn.initiative'
 version = '0.0.1'
@@ -44,6 +30,31 @@ repositories {
 test {
     systemProperty 'spring.profiles.active', 'test'
     useJUnitPlatform()
+}
+
+allure {
+    version = '2.4.1'
+    aspectjweaver = true
+    autoconfigure = true
+
+    reportDir = file('build/allure-results')
+
+    useJUnit5 {
+        version = '2.0-BETA10'
+    }
+
+    downloadLink = 'https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.1.1/allure-2.1.1.zip'
+}
+
+flyway {
+    url = 'jdbc:h2:mem:mydb'
+    user = 'myUsr'
+    password = 'mySecretPwd'
+    schemas = ['schema1', 'schema2', 'schema3']
+    placeholders = [
+            'keyABC': 'valueXYZ',
+            'otherplaceholder': 'value123'
+    ]
 }
 
 dependencies {

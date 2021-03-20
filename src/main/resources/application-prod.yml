@@ -6,6 +6,7 @@ spring:
 #    username: ${rdb_username}
 #    password: ${rdb_password}
 rdb:
-  username: "${rdb_username}"
+  username: ${rdb_username}
   password: ${rdb_password}
-  ws: ${rdb_wszystko}
+  host: ${rdb_host}
+  port: ${rdb_port}
