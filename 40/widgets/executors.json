@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://KostNik.github.io/learn_initiative",
+  "buildOrder" : 40,
+  "buildName" : "GitHub Actions Run #671660563",
+  "buildUrl" : "https://github.com/KostNik/learn_initiative/actions/runs/671660563",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://KostNik.github.io/learn_initiative/40/"
+} ]
