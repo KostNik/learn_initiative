@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3265045ab152a8b3",
-      "reportUrl" : "https://KostNik.github.io/learn_initiative/37//#testresult/3265045ab152a8b3",
+      "uid" : "fa5524274a399084",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative.github.io/38//#testresult/fa5524274a399084",
       "status" : "passed",
       "time" : {
-        "start" : 1616271176195,
-        "stop" : 1616271177306,
-        "duration" : 1111
+        "start" : 1616273466429,
+        "stop" : 1616273467618,
+        "duration" : 1189
       }
     } ]
   }
