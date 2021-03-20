@@ -6,6 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT;
 
 @SpringBootTest(webEnvironment = RANDOM_PORT)
@@ -18,6 +19,11 @@ class StoreApplicationTests {
     void shouldReturnHealthCheckInfo() {
         var actualPong = restTemplate.getForObject("/v1/ping", String.class);
         assertThat(actualPong).contains("PONG");
+    }
+
+    @Test
+    void shouldNotPass() {
+        assertTrue(false);
     }
 
 }
