@@ -66,11 +66,11 @@ jobs:
           ./gradlew flywayMigrate
 
       - name: Test with Gradle
-        run: ./gradlew test
         env:
           RDB_PASSWORD: ${{secrets.TEST_DB_PASSWORD}}
           RDB_USERNAME: ${{secrets.TEST_DB_USER_NAME}}
           RDB_URL: ${{secrets.TEST_DB_URL}}
+        run: ./gradlew test
       - name: Generate Allure report for GitHub pages
         uses: simple-elf/allure-report-action@master
         if: always()
