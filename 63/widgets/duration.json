@@ -1,20 +1,20 @@
 [ {
-  "uid" : "19fa55ecbd1a45b1",
+  "uid" : "60489f4dff7a04d3",
   "name" : "shouldReturnHealthCheckInfo()",
   "time" : {
-    "start" : 1616332025024,
-    "stop" : 1616332025556,
-    "duration" : 532
+    "start" : 1616332839262,
+    "stop" : 1616332839986,
+    "duration" : 724
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5a7d7aa92fae6ba2",
+  "uid" : "814bd3cb0b1adda4",
   "name" : "shouldReturnProducts()",
   "time" : {
-    "start" : 1616332023192,
-    "stop" : 1616332024883,
-    "duration" : 1691
+    "start" : 1616332836980,
+    "stop" : 1616332839078,
+    "duration" : 2098
   },
   "status" : "passed",
   "severity" : "normal"

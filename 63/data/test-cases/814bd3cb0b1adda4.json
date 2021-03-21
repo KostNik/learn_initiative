@@ -1,11 +1,11 @@
 {
-  "uid" : "5a7d7aa92fae6ba2",
+  "uid" : "814bd3cb0b1adda4",
   "name" : "shouldReturnProducts()",
   "historyId" : "6f448ab4c58b1c080bff3fee6d9c9c85",
   "time" : {
-    "start" : 1616332023192,
-    "stop" : 1616332024883,
-    "duration" : 1691
+    "start" : 1616332836980,
+    "stop" : 1616332839078,
+    "duration" : 2098
   },
   "status" : "passed",
   "flaky" : false,
@@ -26,6 +26,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5a7d7aa92fae6ba2.json",
+  "source" : "814bd3cb0b1adda4.json",
   "parameterValues" : [ ]
 }
