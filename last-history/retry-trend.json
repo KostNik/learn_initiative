@@ -1,6 +1,9 @@
 [ {
+  "buildOrder" : 67,
+  "reportUrl" : "https://KostNik.github.io/learn_initiative/67/",
+  "reportName" : "Allure Report with history",
   "data" : {
-    "run" : 0,
+    "run" : 2,
     "retry" : 0
   }
 } ]
