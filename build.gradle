@@ -51,8 +51,6 @@ allure {
 
 
 flyway {
-    print("USE DB: ${System.env.RDB_URL}")
-
     driver = 'com.mysql.cj.jdbc.Driver'
     url = System.env.RDB_URL
     user = System.env.RDB_USERNAME
