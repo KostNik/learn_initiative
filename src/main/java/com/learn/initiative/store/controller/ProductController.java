@@ -20,7 +20,7 @@ public class ProductController {
     @GetMapping("/all")
     @ApiOperation("Get all products")
     public Iterable<Product> allProducts() {
-        log.info("GET ALL PRODUCTS");
+        log.info("GET ALL PRODUCTS!");
         return productsRepository.findAll();
     }
 
