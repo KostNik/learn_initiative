@@ -1,0 +1,31 @@
+{
+  "uid" : "5a7d7aa92fae6ba2",
+  "name" : "shouldReturnProducts()",
+  "historyId" : "6f448ab4c58b1c080bff3fee6d9c9c85",
+  "time" : {
+    "start" : 1616332023192,
+    "stop" : 1616332024883,
+    "duration" : 1691
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5a7d7aa92fae6ba2.json",
+  "parameterValues" : [ ]
+}

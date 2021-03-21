@@ -1,5 +1,31 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "shouldReturnProducts()",
+    "uid" : "5a7d7aa92fae6ba2",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1616332023192,
+      "stop" : 1616332024883,
+      "duration" : 1691
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "shouldReturnHealthCheckInfo()",
+    "uid" : "19fa55ecbd1a45b1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1616332025024,
+      "stop" : 1616332025556,
+      "duration" : 532
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
   "name" : "timeline"
 }
