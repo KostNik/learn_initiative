@@ -16,10 +16,8 @@ public class HealthCheck {
     private String username;
     @Value("${rdb.password}")
     private String password;
-    @Value("${rdb.host}")
-    private String host;
-    @Value("${rdb.port}")
-    private String port;
+    @Value("${rdb.url}")
+    private String url;
 
     @GetMapping("/ping")
     @ApiOperation("Health check the Application")
@@ -27,8 +25,7 @@ public class HealthCheck {
         return "PONG: [>" + LocalDateTime.now() + "<]" +
                 " username : " + username +
                 " password:" + password +
-                " host : " + host +
-                " port:" + port;
+                " host : " + url;
     }
 
 }

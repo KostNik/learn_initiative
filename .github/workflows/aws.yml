@@ -56,9 +56,22 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
+      - name: Run flyway test migration
+        env:
+          RDB_PASSWORD: ${{secrets.TEST_DB_PASSWORD}}
+          RDB_USERNAME: ${{secrets.TEST_DB_USER_NAME}}
+          RDB_URL: ${{secrets.TEST_DB_URL}}
+        run: |
+          ./gradlew flywayInfo
+          ./gradlew flywayMigrate
+
       - name: Test with Gradle
         run: ./gradlew test
-      - name: Test marketplace action
+        env:
+          RDB_PASSWORD: ${{ secrets.TEST_DB_PASSWORD }}
+          RDB_USERNAME: ${{ secrets.TEST_DB_USER_NAME }}
+          RDB_URL: ${{ secrets.TEST_DB_URL }}
+      - name: Generate Allure report for GitHub pages
         uses: simple-elf/allure-report-action@master
         if: always()
         id: allure-report

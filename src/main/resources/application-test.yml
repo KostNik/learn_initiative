@@ -1,7 +1,0 @@
-spring:
-  jpa:
-    show-sql: true
-    generate-ddl: true
-#  datasource:
-#    username: ${rdb_username}
-#    password: ${rdb_password}

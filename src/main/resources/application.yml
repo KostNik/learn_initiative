@@ -1,5 +1,12 @@
-rdb:
-  username: "-"
-  password: "-"
-  host: "-"
-  port: "-"
+spring:
+  datasource:
+    driver-class-name: 'com.mysql.cj.jdbc.Driver'
+    platform: 'org.hibernate.dialect.MySQL57Dialect'
+    username: "${RDB_USERNAME}"
+    password: "${RDB_PASSWORD}"
+    url: "${RDB_URL}"
+  flyway:
+    url: "${RDB_URL}"
+    user: "${RDB_USERNAME}"
+    password: "${RDB_PASSWORD}"
+    create-schemas: true
