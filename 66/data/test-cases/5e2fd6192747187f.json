@@ -1,11 +1,11 @@
 {
-  "uid" : "280b4fc2020ac949",
-  "name" : "shouldReturnProducts()",
-  "historyId" : "6f448ab4c58b1c080bff3fee6d9c9c85",
+  "uid" : "5e2fd6192747187f",
+  "name" : "shouldReturnHealthCheckInfo()",
+  "historyId" : "873d4d74927be90e7fe7d5383abaefba",
   "time" : {
-    "start" : 1616333716990,
-    "stop" : 1616333719050,
-    "duration" : 2060
+    "start" : 1616335622486,
+    "stop" : 1616335623395,
+    "duration" : 909
   },
   "status" : "passed",
   "flaky" : false,
@@ -26,6 +26,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "280b4fc2020ac949.json",
+  "source" : "5e2fd6192747187f.json",
   "parameterValues" : [ ]
 }
