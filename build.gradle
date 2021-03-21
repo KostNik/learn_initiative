@@ -51,6 +51,8 @@ allure {
 
 
 flyway {
+    print("USE DB: ${System.env.RDB_URL}")
+
     driver = 'com.mysql.cj.jdbc.Driver'
     url = System.env.RDB_URL
     user = System.env.RDB_USERNAME
@@ -60,10 +62,6 @@ flyway {
 
 flywayMigrate.dependsOn classes
 flywayInfo.dependsOn classes
-
-bootRun {
-
-}
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
