@@ -1,5 +1,31 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "shouldReturnProducts()",
+    "uid" : "f021efa600b72ea1",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "passed",
+    "time" : {
+      "start" : 1616345898279,
+      "stop" : 1616345900345,
+      "duration" : 2066
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "shouldReturnHealthCheckInfo()",
+    "uid" : "ff4ebe947d59851b",
+    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
+    "status" : "passed",
+    "time" : {
+      "start" : 1616345900570,
+      "stop" : 1616345901348,
+      "duration" : 778
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
   "name" : "suites"
 }

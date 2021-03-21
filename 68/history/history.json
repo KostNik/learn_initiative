@@ -1,1 +1,42 @@
-{ }
+{
+  "6f448ab4c58b1c080bff3fee6d9c9c85" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f021efa600b72ea1",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative/68//#testresult/f021efa600b72ea1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616345898279,
+        "stop" : 1616345900345,
+        "duration" : 2066
+      }
+    } ]
+  },
+  "873d4d74927be90e7fe7d5383abaefba" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff4ebe947d59851b",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative/68//#testresult/ff4ebe947d59851b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1616345900570,
+        "stop" : 1616345901348,
+        "duration" : 778
+      }
+    } ]
+  }
+}
