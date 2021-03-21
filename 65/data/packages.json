@@ -2,26 +2,26 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
     "name" : "shouldReturnProducts()",
-    "uid" : "78d64954f8b9db06",
+    "uid" : "280b4fc2020ac949",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1616333683912,
-      "stop" : 1616333685675,
-      "duration" : 1763
+      "start" : 1616333716990,
+      "stop" : 1616333719050,
+      "duration" : 2060
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "shouldReturnHealthCheckInfo()",
-    "uid" : "4fc39e69285d4d2e",
+    "uid" : "64d75895d269d94b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "passed",
     "time" : {
-      "start" : 1616333685816,
-      "stop" : 1616333686359,
-      "duration" : 543
+      "start" : 1616333719179,
+      "stop" : 1616333719715,
+      "duration" : 536
     },
     "flaky" : false,
     "newFailed" : false,
