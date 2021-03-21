@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "814bd3cb0b1adda4",
-      "reportUrl" : "https://KostNik.github.io/learn_initiative/63//#testresult/814bd3cb0b1adda4",
+      "uid" : "78d64954f8b9db06",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative/64//#testresult/78d64954f8b9db06",
       "status" : "passed",
       "time" : {
-        "start" : 1616332836980,
-        "stop" : 1616332839078,
-        "duration" : 2098
+        "start" : 1616333683912,
+        "stop" : 1616333685675,
+        "duration" : 1763
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "60489f4dff7a04d3",
-      "reportUrl" : "https://KostNik.github.io/learn_initiative/63//#testresult/60489f4dff7a04d3",
+      "uid" : "4fc39e69285d4d2e",
+      "reportUrl" : "https://KostNik.github.io/learn_initiative/64//#testresult/4fc39e69285d4d2e",
       "status" : "passed",
       "time" : {
-        "start" : 1616332839262,
-        "stop" : 1616332839986,
-        "duration" : 724
+        "start" : 1616333685816,
+        "stop" : 1616333686359,
+        "duration" : 543
       }
     } ]
   }

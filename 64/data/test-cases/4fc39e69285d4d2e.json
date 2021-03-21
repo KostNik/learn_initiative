@@ -1,11 +1,11 @@
 {
-  "uid" : "60489f4dff7a04d3",
+  "uid" : "4fc39e69285d4d2e",
   "name" : "shouldReturnHealthCheckInfo()",
   "historyId" : "873d4d74927be90e7fe7d5383abaefba",
   "time" : {
-    "start" : 1616332839262,
-    "stop" : 1616332839986,
-    "duration" : 724
+    "start" : 1616333685816,
+    "stop" : 1616333686359,
+    "duration" : 543
   },
   "status" : "passed",
   "flaky" : false,
@@ -26,6 +26,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "60489f4dff7a04d3.json",
+  "source" : "4fc39e69285d4d2e.json",
   "parameterValues" : [ ]
 }
