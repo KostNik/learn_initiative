@@ -10,10 +10,10 @@ import java.util.Set;
 
 @Getter
 @Setter
-@ToString(exclude = "categories")
+@ToString(exclude = "products")
 @Entity
-@Table(name = "products")
-public class Product implements Serializable {
+@Table(name = "categories")
+public class Category implements Serializable {
 
     static final long serialVersionUID = 1L;
 
@@ -27,7 +27,12 @@ public class Product implements Serializable {
     @Column(name = "description")
     private String description;
 
-    @ManyToMany(mappedBy = "products")
-    private Set<Category> categories;
+    @ManyToMany
+    @JoinTable(
+            name = "categories_products",
+            joinColumns = @JoinColumn(name = "category_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
+    )
+    private Set<Product> products;
 
 }

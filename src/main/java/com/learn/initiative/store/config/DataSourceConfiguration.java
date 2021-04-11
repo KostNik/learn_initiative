@@ -7,12 +7,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
 @Configuration
-@Profile("!test")
+//@Profile("!test")
 public class DataSourceConfiguration {
 
     @Bean
     public FlywayMigrationStrategy flywayMigrationStrategy() {
         return Flyway::migrate;
     }
+
 
 }
